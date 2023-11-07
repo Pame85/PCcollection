@@ -1,0 +1,145 @@
+// Main
+.btn-asphalt {
+  color: $ghost-white !important;
+  background-color: $asphalt;
+  border-color: $asphalt;
+}
+
+.btn-asphalt:hover {
+  color: $ghost-white !important;
+  background-color: $charcoal;
+  border-color: $charcoal;
+}
+
+.btn-midnight-express {
+  color: $ghost-white !important;
+  background-color: $midnight-express !important;
+  border-color: $midnight-express;
+}
+
+.btn-midnight-express:hover {
+  color: $spanish-grey !important;
+  background-color: $midnight-express !important;
+  border-color: $midnight-express;
+}
+
+.btn-ghost-white {
+  color: $crimson !important;
+  background-color: $white !important;
+  border-color: $white;
+}
+
+.btn-ghost-white:hover {
+  color: $crimson !important;
+  background-color: $ghost-white !important;
+  border-color: $ghost-white;
+}
+
+.btn-mint {
+  color: $ghost-white !important;
+  background-color: $mint;
+  border-color: $mint;
+}
+
+.btn-mint:hover {
+  color: $ghost-white !important;
+  background-color: $teal-green;
+  border-color: $teal-green;
+}
+
+.btn-burgundy {
+  color: $ghost-white !important;
+  background-color: $burgundy;
+  border-color: $burgundy;
+}
+
+.btn-burgundy:hover {
+  color: $ghost-white !important;
+  background-color: $crimson;
+  border-color: $crimson;
+}
+
+.btn-crimson {
+  color: $ghost-white !important;
+  background-color: $crimson;
+  border-color: $crimson;
+}
+
+.btn-crimson:hover {
+  color: $ghost-white !important;
+  background-color: $burgundy;
+  border-color: $burgundy;
+}
+
+.btn-tiffany-blue {
+  color: $ghost-white !important;
+  background-color: $tiffany-blue;
+  border-color: $tiffany-blue;
+}
+
+.btn-tiffany-blue:hover {
+  color: $ghost-white !important;
+  background-color: $teal;
+  border-color: $teal;
+}
+
+// Outline
+.btn-outline-asphalt {
+  color: $asphalt !important;
+  background-color: transparent;
+  border-color: $asphalt;
+}
+
+.btn-outline-asphalt:hover {
+  color: $ghost-white !important;
+  background-color: $asphalt !important;
+  border-color: $asphalt;
+}
+
+.btn-outline-midnight-express {
+  color: $midnight-express !important;
+  background-color: transparent;
+  border-color: $midnight-express;
+}
+
+.btn-outline-midnight-express:hover {
+  color: $ghost-white !important;
+  background-color: $midnight-express;
+  border-color: $midnight-express;
+}
+
+.btn-outline-mint {
+  color: $mint !important;
+  background-color: transparent;
+  border-color: $mint;
+}
+
+.btn-outline-mint:hover {
+  color: $ghost-white !important;
+  background-color: $mint;
+  border-color: $mint;
+}
+
+.btn-outline-crimson {
+  color: $crimson !important;
+  background-color: transparent;
+  border-color: $crimson;
+}
+
+.btn-outline-crimson:hover {
+  color: $ghost-white !important;
+  background-color: $crimson;
+  border-color: $crimson;
+}
+
+.btn-outline-tiffany-blue {
+  color: $tiffany-blue !important;
+  background-color: transparent;
+  border-color: $tiffany-blue;
+}
+
+.btn-outline-tiffany-blue:hover {
+  color: $ghost-white !important;
+  background-color: $tiffany-blue;
+  border-color: $tiffany-blue;
+}

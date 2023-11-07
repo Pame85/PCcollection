@@ -1,0 +1,45 @@
+.dataTable-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.dataTable-search {
+  .dataTable-input {
+    margin: 5px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid $white-smoke;
+  }
+}
+
+.dataTable-input:focus,
+.dataTable-input:focus-visible {
+  outline: 1px solid $midnight-express;
+}
+
+.dataTable-info,
+.dataTable-pagination { text-align: right; }
+
+.dataTable-pagination {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+
+  ul { list-style: none; }
+
+  ul li {
+    display: inline;
+    letter-spacing: 5px;
+  }
+
+  .dataTable-pagination-list {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+// Datatables default styling can be found here:
+// https://raw.githubusercontent.com/fiduswriter/Simple-DataTables/master/src/style.css

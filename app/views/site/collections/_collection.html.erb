@@ -1,0 +1,38 @@
+<div id="<%= dom_id(collection) %>">
+  <p>
+    <strong>Sku:</strong>
+    <%= collection.sku %>
+  </p>
+  <p>
+    <strong>Name:</strong>
+    <%= collection.name %>
+  </p>
+  <p>
+    <strong>Description:</strong>
+    <%= collection.description %>
+  </p>
+  <p>
+    <strong>Quantity:</strong>
+    <%= collection.quantity %>
+  </p>
+  <p>
+    <strong>Price:</strong>
+    <%= collection.price %>
+  </p>
+  <p>
+    <strong>Available:</strong>
+    <%= collection.available %>
+  </p>
+  <p>
+    <strong>Products count:</strong>
+    <%= collection.products.count %>
+  </p>
+  <p>
+    <strong>Products:</strong>
+    <ul>
+      <% collection.products.each do |product| %>
+        <li><%= product.name %></li>
+      <% end %>
+    </ul>
+  </p>
+</div>

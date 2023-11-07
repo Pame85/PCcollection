@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand navbar-light bg-light" aria-label="Main navbar">
+  <section class="container">
+    <%= link_to 'PC Collection', root_path, class: 'navbar-brand' %>
+    <button class="navbar-toggler" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navbarMain" data-bs-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navbarMain" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <%= link_to 'Admin', admin_root_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Cart', site_shopping_cart_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="navbarDropDown" class="nav-link dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#">Dropdown</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropDown">
+            <li><%= link_to 'Link', root_path, class: 'dropdown-item' %></li>
+            <li><%= link_to 'Link', root_path, class: 'dropdown-item' %></li>
+            <li><%= link_to 'Link', root_path, class: 'dropdown-item' %></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+</nav>

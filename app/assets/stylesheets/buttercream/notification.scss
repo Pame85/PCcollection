@@ -1,0 +1,16 @@
+.notification {
+  position: absolute;
+  z-index: 999;
+}
+
+.alert-pink {
+  color: $ghost-white !important;
+  background-color: $infra-red-danger;
+  border-color: $infra-red-danger;
+}
+
+.notice-blue {
+  color: $ghost-white !important;
+  background-color: $blue-green-info;
+  border-color: $blue-green-info;
+}

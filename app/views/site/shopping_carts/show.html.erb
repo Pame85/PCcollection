@@ -1,0 +1,50 @@
+<section class="container">
+  <section class="row pt-5">
+    <section class="col-md-6 text-start">
+      <h1>Shopping Cart</h1>
+    </section>
+    <section class="col-md-6 text-end">
+      <p><%= link_to 'Continue shopping', root_path, class: 'text-underline' %></p>
+    </section>
+  </section>
+  <section class="row pb-5">
+    <section class="col-md-12 pb-3">
+      <section class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr class="text-center">
+              <th colspan="2" scope="col" class="w-50">Item</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col" style="min-width: 15%;">Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= render partial: 'shopping_cart_item', collection: @shopping_cart.shopping_cart_items.order(created_at: :desc) %>
+          </tbody>
+        </table>
+      </section>
+    </section>
+    <section class="col-md-12 text-end">
+      <p>
+        <span class="fw-bold">Subtotal: &nbsp;</span>
+        <span><%= number_to_currency @shopping_cart.subtotal %></span>
+      </p>
+      <p>
+        <span class="fw-bold">Shipping cost: &nbsp;</span>
+        <span><%= number_to_currency @shopping_cart.shipping_cost %></span>
+      </p>
+      <p>
+        <span class="fw-bold">Total: &nbsp;</span>
+        <span><%= number_to_currency @shopping_cart.total %></span>
+      </p>
+    </section>
+    <section class="col-md-6 text-start p-0 align-self-center">
+      <%= button_to 'Empty cart', site_shopping_cart_path, method: :delete, class: 'btn btn-to-link text-underline' %>
+    </section>
+    <section class="col-md-6 text-end">
+      <%= link_to 'Checkout', new_site_order_path, class: 'btn btn-dark btn-lg' %>
+    </section>
+  </section>
+</section>

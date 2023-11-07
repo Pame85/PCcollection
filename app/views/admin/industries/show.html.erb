@@ -1,0 +1,7 @@
+<%= render @industry %>
+<div>
+  <%= link_to 'Edit Industry', edit_admin_industry_path(@industry) %>
+  |
+  <%= link_to 'All Industries', admin_industries_path %>
+  <%= button_to 'Delete Industry', admin_industry_path(@industry), method: :delete %>
+</div>

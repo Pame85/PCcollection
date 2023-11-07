@@ -1,0 +1,32 @@
+<div id="sidebar-wrapper" class="bg-charcoal">
+  <section class="sidebar-header text-center pt-4 pb-4">
+    <h2><%= link_to 'PC Collection', root_path, class: 'text-ghost-white' %></h2>
+  </section>
+  <section class="list-group list-group-flush">
+    <p class="text-uppercase pt-4 ps-3 fs-14 ls-1 text-spanish-grey">Menu</p>
+    <%= link_to admin_industries_path, class: 'list-group-item' do %>
+      <i class="fas fa-arrow-alt-circle-right ms-1 me-3"></i>
+      <span>Industries</span>
+    <% end %>
+    <%= link_to admin_vendors_path, class: 'list-group-item' do %>
+      <i class="fas fa-arrow-alt-circle-right ms-1 me-3"></i>
+      <span>Vendors</span>
+    <% end %>
+    <%= link_to admin_categories_path, class: 'list-group-item' do %>
+      <i class="fas fa-arrow-alt-circle-right ms-1 me-3"></i>
+      <span>Categories</span>
+    <% end %>
+    <%= link_to admin_products_path, class: 'list-group-item' do %>
+      <i class="fas fa-arrow-alt-circle-right ms-1 me-3"></i>
+      <span>Products</span>
+    <% end %>
+    <%= link_to admin_collections_path, class: 'list-group-item' do %>
+      <i class="fas fa-arrow-alt-circle-right ms-1 me-3"></i>
+      <span>Collections</span>
+    <% end %>
+    <%= link_to admin_orders_path, class: 'list-group-item' do %>
+      <i class="fas fa-arrow-alt-circle-right ms-1 me-3"></i>
+      <span>Orders</span>
+    <% end %>
+  </section>
+</div>

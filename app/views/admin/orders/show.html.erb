@@ -1,0 +1,12 @@
+<%= render @order %>
+<p class="fw-bold">Items</p>
+<ul>
+  <% @order.order_items.each do |order_item| %>
+    <li><%= order_item.orderable.name %></li>
+  <% end %>
+</ul>
+<div>
+  <%= link_to 'Edit Order', edit_admin_order_path(@order) %>
+  |
+  <%= link_to 'All Orders', admin_orders_path %>
+</div>

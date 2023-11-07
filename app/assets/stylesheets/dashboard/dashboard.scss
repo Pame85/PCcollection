@@ -1,0 +1,107 @@
+html, body {
+  margin: 0;
+}
+
+body.admin,
+body.team {
+  font-family: 'Nunito', sans-serif;
+  color: $asphalt;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    color: $charcoal;
+  }
+}
+
+body.admin,
+body.team {
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  #sidebar-wrapper p {
+    color: $white-smoke;
+  }
+
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+    padding-bottom: 50px;
+  }
+
+  #sidebar-wrapper .list-group-item {
+    padding: 1rem;
+    border: 0;
+    color: $white-smoke;
+    background-color: $charcoal;
+    font-size: 1rem;
+  }
+
+  #sidebar-wrapper .list-group-item:hover {
+    color: $charcoal;
+    background-color: $renault-neutral;
+  }
+
+  #page-content-wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
+  #dashboard-content {
+    min-height: 900px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #dashboard-footer {
+    font-size: 15px;
+    color: $spanish-grey;
+    background-color: white;
+
+    a {
+      color: $midnight-express;
+      text-decoration: none;
+    }
+
+    a:hover { color: $charcoal; }
+  }
+
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: $midnight-express;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    color: $charcoal;
+    text-decoration: none;
+  }
+}

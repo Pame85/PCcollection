@@ -1,0 +1,44 @@
+<section class="container">
+  <section class="row">
+    <section class="col-md-12 py-5">
+      <h1>New order</h1>
+      <%= simple_form_for([:site, @order]) do |f| %>
+        <%= f.error_notification %>
+        <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+        <div class="form-inputs">
+          <%= f.input :name %>
+          <section class="row">
+            <section class="col-md-6">
+              <%= f.input :phone %>
+            </section>
+            <section class="col-md-6">
+              <%= f.input :email %>
+            </section>
+          </section>
+          <section class="row">
+            <section class="col-md-6">
+              <%= f.input :address_line_1 %>
+            </section>
+            <section class="col-md-6">
+              <%= f.input :address_line_2 %>
+            </section>
+          </section>
+          <section class="row">
+            <section class="col-md-6">
+              <%= f.input :postcode %>
+            </section>
+            <section class="col-md-6">
+              <%= f.input :town %>
+            </section>
+          </section>
+          <%= f.input :subtotal, as: :string, readonly: true, input_html: { value: @shopping_cart.subtotal, class: 'text-end' } %>
+          <%= f.input :shipping_cost, as: :string, readonly: true, input_html: { value: @shopping_cart.shipping_cost, class: 'text-end' } %>
+          <%= f.input :total, as: :string, readonly: true, input_html: { value: @shopping_cart.total, class: 'text-end' } %>
+        </div>
+        <div class="form-actions">
+          <%= f.button :submit, 'Buy' %>
+        </div>
+      <% end %>
+    </section>
+  </section>
+</section>

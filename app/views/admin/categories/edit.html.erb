@@ -1,0 +1,8 @@
+<h1>Editing category</h1>
+<%= render 'category_form', category: @category %>
+<br>
+<div>
+  <%= link_to 'Category Details', admin_category_path(@category) %>
+  |
+  <%= link_to 'All Categories', admin_categories_path %>
+</div>

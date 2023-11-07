@@ -1,0 +1,8 @@
+<h1>Editing product</h1>
+<%= render 'product_form', product: @product %>
+<br>
+<div>
+  <%= link_to 'Product Details', admin_product_path(@product) %>
+  |
+  <%= link_to 'All Products', admin_products_path %>
+</div>

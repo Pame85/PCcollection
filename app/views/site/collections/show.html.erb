@@ -1,0 +1,22 @@
+<section class="container">
+  <section class="row pt-5">
+    <section class="col-md-6">
+      <%= image_tag 'placeholders/Female_KadazanPenampang_(2).jpg', class: 'img-fluid' %>
+    </section>
+    <section class="col-md-6">
+      <div id="<%= dom_id(@collection) %>">
+        <h4><%= @collection.name %></h4>
+        <p><%= @collection.description %></p>
+        <p>This collection contains:</p>
+        <ul>
+          <% @collection.products.each do |product| %>
+            <li><%= product.name %></li>
+          <% end %>
+        </ul>
+        <p>Total products: <%= @collection.products.count %></p>
+        <p class="lead"><%= number_to_currency(@collection.price) %></p>
+      </div>
+      <%= button_to 'Add to cart', site_shopping_cart_items_path(item_id: @collection, class: @collection.class), class: 'btn btn-dark btn-lg w-100' %>
+    </section>
+  </section>
+</section>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PCC Admin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', 'data-turbo-track': 'reload' %>
+    <%= javascript_importmap_tags %>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body class="<%= "#{namespace} #{body_class}" %>">
+    <div data-controller="toggle">
+      <section id="wrapper" class="d-flex" data-toggle-target="content">
+        <%= render partial: 'shared/admin/admin_sidebar' %>
+        <main id="page-content-wrapper" role="main">
+          <section id="dashboard-content">
+            <%= render partial: 'shared/admin/admin_header' %>
+            <section class="container-fluid p-5">
+              <section class="row">
+                <section class="col-md-12">
+                  <%= yield %>
+                </section>
+              </section>
+            </section>
+          </section>
+          <section id="dashboard-footer">
+            <%= render partial: 'shared/admin/admin_footer' %>
+          </section>
+        </main>
+      </section>
+    </div>
+  </body>
+</html>
+  

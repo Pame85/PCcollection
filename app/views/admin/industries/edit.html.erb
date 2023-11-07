@@ -1,0 +1,8 @@
+<h1>Editing industry</h1>
+<%= render 'industry_form', industry: @industry %>
+<br>
+<div>
+  <%= link_to 'Industry Details', admin_industry_path(@industry) %>
+  |
+  <%= link_to 'All Industries', admin_industries_path %>
+</div>

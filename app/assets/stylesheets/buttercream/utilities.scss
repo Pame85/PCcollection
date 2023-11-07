@@ -1,0 +1,76 @@
+// Font Sizes
+.fs-13 { font-size: 13px !important; }
+.fs-14 { font-size: 14px !important; }
+.fs-15 { font-size: 15px !important; }
+.fs-16 { font-size: 16px !important; }
+.fs-18 { font-size: 18px !important; }
+.fs-20 { font-size: 20px !important; }
+.fs-24 { font-size: 24px !important; }
+
+// Font Weight
+.fw-500 { font-weight: 500; }
+
+// Display
+.display-7 { font-size: 2rem; }
+.display-8 { font-size: 1.5rem; }
+
+// Width
+.w-5 { width: 5% !important; }
+.w-30 { width: 30% !important; }
+.w-40 { width: 40% !important; }
+
+// Border Radius
+.br-6 { border-radius: 6px; }
+.br-8 { border-radius: 8px; }
+.br-10 { border-radius: 10px; }
+.br-15 { border-radius: 15px; }
+.br-20 { border-radius: 20px; }
+
+.br-tl-15 { border-top-left-radius: 15px 15px; }
+.br-bl-15 { border-bottom-left-radius: 15px 15px; }
+
+.bs-width-thick { border-left-width: thick !important; }
+
+// Padding
+.pb-50 { padding-bottom: 3.125rem !important; }
+.p-60 { padding: 3.75rem !important; }
+.py-100 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.py-160 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+// Margin
+.mt-6 { margin-top: 4rem !important; }
+
+// Misc
+.text-decoration-0 { text-decoration: none; }
+.text-justify { text-align: justify; }
+.text-underline { text-decoration: underline; }
+.ms-n-15 { margin-left: -15px; }
+.ls-1 { letter-spacing: 1px; }
+.resize-none { resize: none }
+.hr-thin-line { height: 0.75px !important; }
+
+// Buttons
+.btn-to-link-start {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: 0px;
+}
+.btn-to-link-end {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: 0px;
+}
+.btn-to-link {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}

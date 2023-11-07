@@ -1,0 +1,30 @@
+body.internal,
+body.external {
+  trix-editor,
+  .trix-content,
+  .lesson-content {
+    pre {
+      font-family: 'Courier New';
+      background-color: $white-smoke;
+      padding: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    blockquote {
+      padding: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: $ghost-white;
+      border-left: 5px solid $burgundy;
+    }
+
+    div a { color: $crimson !important; }
+
+    div a:hover,
+    div a:focus {
+      color: $burgundy !important;
+      text-decoration: underline;
+    }
+  }
+}

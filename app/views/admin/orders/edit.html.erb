@@ -1,0 +1,30 @@
+<h1>Editing order</h1>
+<%= simple_form_for([:admin, @order]) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+  <div class="form-inputs">
+    <%= f.input :reference %>
+    <%= f.input :name %>
+    <%= f.input :phone %>
+    <%= f.input :email %>
+    <%= f.input :address_line_1 %>
+    <%= f.input :address_line_2 %>
+    <%= f.input :town %>
+    <%= f.input :postcode %>
+    <%= f.input :subtotal %>
+    <%= f.input :shipping_cost %>
+    <%= f.input :total %>
+    <%= f.input :paid %>
+    <%= f.input :status %>
+  </div>
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+<br>
+<div>
+  <%= link_to 'Order Details', admin_order_path(@order) %>
+  |
+  <%= link_to 'All Orders', admin_orders_path %>
+</div>
+  

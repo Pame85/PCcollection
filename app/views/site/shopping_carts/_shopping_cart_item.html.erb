@@ -1,0 +1,24 @@
+<tr class="text-center">
+  <td class="align-middle text-center">
+    <%= image_tag 'placeholders/camera-icon.jpg', height: 55 %>
+  </td>
+  <td class="align-middle text-center">
+    <%= shopping_cart_item.item.name %>
+  </td>
+  <td class="align-middle">
+    <%= number_to_currency(shopping_cart_item.item.price) %>
+  </td>
+  <td class="align-middle">
+    <%= form_tag(site_shopping_cart_item_path(id: shopping_cart_item.id), method: :patch) do %>
+      <%= select_tag :quantity, options_for_select(1..shopping_cart_item.item.quantity, "#{shopping_cart_item.quantity}"), { onchange: 'this.form.submit()' } %>
+    <% end %>
+  </td>
+  <td class="align-middle">
+    <%= number_to_currency(shopping_cart_item.subtotal) %>
+  </td>
+  <td class="align-middle">
+    <%= button_to site_shopping_cart_item_path(id: shopping_cart_item.id), method: :delete, class: 'btn btn-to-link' do %>
+      <i class="fa-solid fa-trash-can"></i>
+    <% end %>
+  </td>
+</tr>

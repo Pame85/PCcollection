@@ -1,0 +1,11 @@
+<h1>Vendors</h1>
+<div id="vendors">
+  <% @vendors.each do |vendor| %>
+    <%= render vendor %>
+    <p>
+      <%= link_to 'Show this vendor', admin_vendor_path(vendor) %>
+    </p>
+  <% end %>
+</div>
+<%= link_to 'New vendor', new_admin_vendor_path %>
+  

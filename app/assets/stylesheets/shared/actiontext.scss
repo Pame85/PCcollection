@@ -1,0 +1,55 @@
+body.internal,
+body.external {
+  .trix-content {
+    .attachment-gallery {
+      > action-text-attachment,
+      > .attachment {
+        flex: 1 0 33%;
+        padding: 0 0.5em;
+        max-width: 33%;
+      }
+
+      &.attachment-gallery--2,
+      &.attachment-gallery--4 {
+        > action-text-attachment,
+        > .attachment {
+          flex-basis: 50%;
+          max-width: 50%;
+        }
+      }
+    }
+
+    action-text-attachment {
+      .attachment {
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+    }
+
+    div a {
+      color: $crimson;
+    }
+
+    div a:hover,
+    div a:focus { color: $burgundy; text-decoration: underline; }
+  }
+
+  trix-editor {
+    min-height: 20em;
+    overflow-y: auto;
+  }
+
+  trix-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $light-grey;
+    border-radius: 10px;
+    padding: 15px 10px 5px 10px;
+    margin-bottom: 10px;
+
+    .trix-button-group {
+      background-color: white;
+    }
+  }
+}

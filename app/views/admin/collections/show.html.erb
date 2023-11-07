@@ -1,0 +1,7 @@
+<%= render @collection %>
+<div>
+  <%= link_to 'Edit Collection', edit_admin_collection_path(@collection) %>
+  |
+  <%= link_to 'All Collections', admin_collections_path %>
+  <%= button_to 'Delete Collection', admin_collection_path(@collection), method: :delete %>
+</div>

@@ -1,0 +1,18 @@
+body.admin {
+  // Bootstrap
+  .dropdown-item:active {
+    color: inherit;
+    background-color: $white-smoke;
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: $midnight-express !important;
+    background-color: $alice-blue !important;
+  }
+
+  // Pagy
+  .page-item.active .page-link {
+    background-color: $asphalt;
+    border-color: $asphalt;
+  }
+}

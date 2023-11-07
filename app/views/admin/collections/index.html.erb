@@ -1,0 +1,11 @@
+<h1>Collections</h1>
+<div id="collections">
+  <% @collections.each do |collection| %>
+    <%= render collection %>
+    <p>
+      <%= link_to 'Collection Details', admin_collection_path(collection) %>
+    </p>
+  <% end %>
+</div>
+<%= link_to 'Add Collection', new_admin_collection_path %>
+  

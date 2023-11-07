@@ -1,0 +1,17 @@
+<section class="container">
+  <section class="row pt-5">
+    <section class="col-md-5">
+      <%= image_tag 'placeholders/Female_KadazanPenampang_(2).jpg', class: 'img-fluid' %>
+    </section>
+    <section class="col-md-2">
+      <div id="<%= dom_id(@product) %>">
+        <h4><%= @product.name %></h4>
+        <p><%= @product.description %></p>
+        <p class="lead"><%= number_to_currency(@product.price) %></p>
+      </div>
+      <%= button_to 'Add to cart', site_shopping_cart_items_path(item_id: @product, class: @product.class), class: 'btn btn-dark btn-lg w-100' %>
+      <br>
+      <%= link_to 'Back', root_path, class: 'text-underline' %>
+    </section>
+  </section>
+</section>

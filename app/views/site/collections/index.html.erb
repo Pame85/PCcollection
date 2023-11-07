@@ -1,0 +1,31 @@
+<section class="container">
+  <section class="row">
+    <section class="col-md-12 py-5">
+      <h2>Collections</h2>
+      <div id="collections">
+        <% if @collections.any? %>
+          <section class="row">
+            <% @collections.each do |collection| %>
+              <section class="col-md-4 mb-3">
+                <section class="card h-100">
+                  <section class="card-body">
+                    <%= link_to site_collection_path(collection) do %>
+                      <p class="mb-0"><%= collection.name %></p>
+                      <p class="mb-0"><%= number_to_currency(collection.price) %></p>
+                    <% end %>
+                  </section>
+                </section>
+              </section>
+            <% end %>
+          </section>
+        <% else %>
+          <section class="row">
+            <section class="col-md-12">
+              <p>No collections found.</p>
+            </section>
+          </section>
+        <% end %>
+      </div>
+    </section>
+  </section>
+</section>

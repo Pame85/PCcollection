@@ -1,0 +1,58 @@
+<section class="bg-secondary bg-opacity-10">
+  <section class="container">
+    <section class="row">
+      <section class="col-md-12 py-5">
+        <h1>PC Collection</h1>
+        <p>Collection by PC.</p>
+      </section>
+    </section>
+  </section>
+</section>
+
+<section class="container pb-5">
+  <section class="row pt-5">
+    <p class="display-8">Collections</p>
+    <% if @collections.any? %>
+      <% @collections.each do |collection| %>
+        <section class="col-md-4 mb-3">
+          <section class="card h-100">
+            <section class="card-body">
+              <%= link_to site_collection_path(collection) do %>
+                <p class="mb-0"><%= collection.name %></p>
+                <p class="mb-0"><%= number_to_currency(collection.price) %></p>
+              <% end %>
+            </section>
+          </section>
+        </section>
+      <% end %>
+      <p class="mb-0 text-end"><%= link_to 'See all collections', site_collections_path %></p>
+    <% else %>
+      <section class="col-md-12">
+        <p>No collections found.</p>
+      </section>
+    <% end %>
+  </section>
+
+  <section class="row pt-5">
+    <p class="display-8">Products</p>
+    <% if @products.any? %>
+      <% @products.each do |product| %>
+        <section class="col-md-4 mb-3">
+          <section class="card">
+            <section class="card-body">
+              <%= link_to site_product_path(product) do %>
+                <p class="mb-0"><%= product.name %></p>
+                <p class="mb-0"><%= number_to_currency(product.price) %></p>
+              <% end %>
+            </section>
+          </section>
+        </section>
+      <% end %>
+      <p class="mb-0 text-end"><%= link_to 'Products Listing', site_products_path %></p>
+    <% else %>
+      <section class="col-md-12">
+        <p>No products found.</p>
+      </section>
+    <% end %>
+  </section>
+</section>
